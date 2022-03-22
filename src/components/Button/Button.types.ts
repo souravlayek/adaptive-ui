@@ -1,0 +1,8 @@
+import {ButtonHTMLAttributes} from "react";
+
+export type ButtonType = "primary" | "secondary" | "text"
+
+export type ButtonProps = {
+  isLoading?: boolean,
+  buttonType: ButtonType
+} & ButtonHTMLAttributes<HTMLButtonElement>

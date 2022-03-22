@@ -1,0 +1,20 @@
+.adaptiveButton {
+  border: none;
+  padding: 0;
+  outline: none;
+  margin: 0;
+  min-height: 30px;
+  min-width: 60px;
+}
+.adaptiveButton.primary {
+  background-color: red;
+}
+.adaptiveButton.secondary {
+  background-color: transparent;
+  border: 1px solid red;
+}
+.adaptiveButton.text {
+  background-color: transparent;
+  border: none;
+  color: red;
+}
