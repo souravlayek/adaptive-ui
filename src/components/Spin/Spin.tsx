@@ -51,7 +51,7 @@ const Spin: React.FC<SpinnerProps> = (props) => {
   if(isSpinning && children) {
     return (
       <>
-      <div className="spinner-content">
+      <div className="spinner-content" data-testid="spinner">
         {children}
         <div className="spinner-top-wrapper">
           <BaseSpinner type={type} size={size} />

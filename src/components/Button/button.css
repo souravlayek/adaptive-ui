@@ -1,20 +1,24 @@
 .adaptiveButton {
   border: none;
-  padding: 0;
+  padding: 14px 24px;
   outline: none;
   margin: 0;
-  min-height: 30px;
+  min-height: 48px;
   min-width: 60px;
 }
 .adaptiveButton.primary {
   background-color: red;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
 }
 .adaptiveButton.secondary {
   background-color: transparent;
   border: 1px solid red;
+  font-size: 18px;
 }
 .adaptiveButton.text {
   background-color: transparent;
   border: none;
   color: red;
+  font-size: 18px;
 }
