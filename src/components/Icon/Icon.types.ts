@@ -2,7 +2,9 @@ import React from "react"
 
 export type IconProps = {
   icon?:IconType,
-  customIcon?: React.ReactElement
+  customIcon?: React.ReactElement,
+  color?:string,
+  size?: number
 }
 export type IconTypeProps = {
   color?:string,
