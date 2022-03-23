@@ -1,8 +1,8 @@
 import React from "react"
-declare type Icons = typeof import("./index").Icons
 
 export type IconProps = {
-  icon:IconType
+  icon?:IconType,
+  customIcon?: React.ReactElement
 }
 export type IconTypeProps = {
   color?:string,
@@ -10,4 +10,43 @@ export type IconTypeProps = {
 }
 
 
-export type IconType =  Icons
+export type IconType = "leftArrow"|
+"rightArrow"|
+"checkCircle"|
+"check"|
+"chevronDown"|
+"chevronLeft"|
+"chevronRight"|
+"chevronUp"|
+"creditCard"|
+"edit"|
+"eyeOff"|
+"eye"|
+"filter"|
+"heart"|
+"helpCircle"|
+"home"|
+"info"|
+"key"|
+"lock"|
+"mapPin"|
+"minusCircle"|
+"moreHorizontal"|
+"paperClip"|
+"plusCircle"|
+"plus"|
+"search"|
+"settings"|
+"share"|
+"shoppingBag"|
+"shoppingCart"|
+"sliders"|
+"star"|
+"tag"|
+"x"|
+"zap"|
+"checkFilled"|
+"heartFilled"|
+"plusCircleFilled"|
+"starFilled"|
+"zapFilled"
