@@ -1,6 +1,11 @@
 {
   "name": "adaptive_ui",
+  "repository": {
+    "url": "https://github.com/souravlayek/adaptive-ui.git",
+    "type": "git"
+  },
   "publishConfig": {
+    "name": "@souravlayek/adaptive-ui",
     "registry": "https://npm.pkg.github.com/souravlayek"
   },
   "version": "0.0.1",
