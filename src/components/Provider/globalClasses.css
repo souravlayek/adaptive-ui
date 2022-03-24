@@ -47,6 +47,19 @@ table {
 	border-spacing: 0;
 }
 
+:root {
+  --ripple-position: 50%;
+  --spinner-color: #4D96FF;
+  --hour-glass-border: 32px;
+  --button-primary-color: #000;
+  --button-secondary-color: #000;
+  --button-primary-hover-color: #262C35;
+  --button-secondary-drop-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  --button-secondary-content-color: #3A3A3A;
+  --button-primary-content-color: #fff;
+
+}
+
 
 .adaptive-heading-one {
   font-family: 'Lato';
@@ -164,6 +177,14 @@ table {
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
+}
+button {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+
 }
 .adaptive-typography-interaction-link-small {
   font-family: 'Lato';

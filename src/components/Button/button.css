@@ -5,20 +5,42 @@
   margin: 0;
   min-height: 48px;
   min-width: 60px;
+  cursor: pointer;
+}
+.adaptiveButton.with-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+.adaptiveButton.primary.with-icon path {
+  fill:  var(--button-primary-content-color);
+}
+.adaptiveButton.secondary.with-icon path {
+  fill:  var(--button-secondary-content-color);
+}
+.adaptiveButton.with-icon:hover {
+  gap: 10px;
 }
 .adaptiveButton.primary {
-  background-color: red;
+  background-color: var(--button-primary-color);
+  border: 1px solid var(--button-primary-color);
   font-family: 'Lato', sans-serif;
   font-size: 18px;
+  border-radius: 15px;
+  color:  var(--button-primary-content-color);
 }
 .adaptiveButton.secondary {
   background-color: transparent;
-  border: 1px solid red;
+  border-radius: 15px;
+  box-shadow: var(--button-secondary-drop-shadow);
+  color: var(--button-secondary-content-color);
   font-size: 18px;
 }
 .adaptiveButton.text {
   background-color: transparent;
   border: none;
-  color: red;
+  color: #000;
   font-size: 18px;
 }

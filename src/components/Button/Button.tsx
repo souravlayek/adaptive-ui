@@ -16,28 +16,43 @@ const getStyle = (buttonType: ButtonType) => {
       return "";
   }
 };
-const BaseButton: React.FC<ButtonProps> = React.forwardRef(({
-  isLoading,
-  disabled,
-  buttonType,
-  children,
-  ...props
-}, ref:any) => (
-  <button
-    ref={ref}
-    disabled={isLoading || disabled}
-    className={clsx(["adaptiveButton", getStyle(buttonType)])}
-    {...props}
-  >
-    {children}
-  </button>
-));
+const BaseButton: React.FC<ButtonProps> = React.forwardRef(
+  (
+    {
+      isLoading,
+      disabled,
+      buttonType,
+      children,
+      leftIcon,
+      rightIcon,
+      ...props
+    },
+    ref: any
+  ) => (
+    <button
+      ref={ref}
+      disabled={isLoading || disabled}
+      className={clsx([
+        "adaptiveButton",
+        getStyle(buttonType),
+        leftIcon || rightIcon ? "with-icon" : "",
+      ])}
+      {...props}
+    >
+      {leftIcon}
+      {children}
+      {rightIcon}
+    </button>
+  )
+);
 const Button: React.FC<ButtonProps> = (props) => {
   const { isLoading } = props;
   if (isLoading) {
-    return (<Spin isSpinning={isLoading}>
-      <BaseButton {...props} />
-    </Spin>)
+    return (
+      <Spin isSpinning={isLoading}>
+        <BaseButton {...props} />
+      </Spin>
+    );
   }
   return <BaseButton {...props} />;
 };

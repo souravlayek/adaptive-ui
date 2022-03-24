@@ -1,9 +1,4 @@
 
-:root {
-  --ripple-position: 50%;
-  --spinner-color: #4D96FF;
-  --hour-glass-border: 32px;
-}
 .spinner-wrapper {
   position: relative;
   display: flex;

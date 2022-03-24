@@ -1,8 +1,6 @@
-import React from "react"
-
 export type IconProps = {
   icon?:IconType,
-  customIcon?: React.ReactElement,
+  customIcon?: JSX.Element,
   color?:string,
   size?: number
 }
@@ -10,6 +8,9 @@ export type IconTypeProps = {
   color?:string,
   size?: number
 }
+
+export type SvgIcon = React.ComponentType<IconProps>;
+
 
 
 export type IconType = "leftArrow"|
