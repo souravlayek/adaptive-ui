@@ -60,6 +60,7 @@ table {
   --button-text-content-color: var(--button-primary-color);
   --button-disabled-background-color: #F8F7FA;
   --button-disabled-content-color: #A6A6AA;
+  --input-inactive-border-color: #CBCBD4;
 }
 
 
