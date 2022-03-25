@@ -9,9 +9,6 @@ export type IconTypeProps = {
   size?: number
 }
 
-export type SvgIcon = React.ComponentType<IconProps>;
-
-
 
 export type IconType = "leftArrow"|
 "rightArrow"|

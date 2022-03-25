@@ -7,6 +7,16 @@
   min-width: 60px;
   cursor: pointer;
 }
+
+.adaptiveButton:disabled,
+.adaptiveButton[disabled] {
+  background-color: var(--button-disabled-background-color) !important;
+  border: 1px solid var(--button-disabled-background-color) !important;
+  color: var(--button-disabled-content-color) !important;
+}
+.adaptiveButton.secondary.with-icon path {
+  fill:  var(--button-disabled-content-color) !important;
+}
 .adaptiveButton.with-icon {
   display: flex;
   justify-content: center;
@@ -43,4 +53,7 @@
   border: none;
   color: #000;
   font-size: 18px;
+}
+.adaptiveButton.text.with-icon path {
+  fill: var(--button-text-content-color);
 }
